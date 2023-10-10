@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4 , h5, p, small, a, ul li{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+header{
+    background: url("Assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 98.56%, 2.00% 98.43%, 4.00% 98.04%, 6.00% 97.42%, 8.00% 96.56%, 10.00% 95.51%, 12.00% 94.27%, 14.00% 92.89%, 16.00% 91.41%, 18.00% 89.86%, 20.00% 88.28%, 22.00% 86.72%, 24.00% 85.22%, 26.00% 83.81%, 28.00% 82.54%, 30.00% 81.44%, 32.00% 80.54%, 34.00% 79.86%, 36.00% 79.42%, 38.00% 79.23%, 40.00% 79.30%, 42.00% 79.62%, 44.00% 80.19%, 46.00% 81.00%, 48.00% 82.01%, 50.00% 83.21%, 52.00% 84.55%, 54.00% 86.02%, 56.00% 87.56%, 58.00% 89.13%, 60.00% 90.70%, 62.00% 92.22%, 64.00% 93.65%, 66.00% 94.96%, 68.00% 96.10%, 70.00% 97.05%, 72.00% 97.78%, 74.00% 98.28%, 76.00% 98.53%, 78.00% 98.52%, 80.00% 98.25%, 82.00% 97.74%, 84.00% 96.98%, 86.00% 96.02%, 88.00% 94.86%, 90.00% 93.55%, 92.00% 92.11%, 94.00% 90.58%, 96.00% 89.01%, 98.00% 87.44%, 100.00% 85.90%);
+    
+}
+
+
+.first{
+    padding: 10rem 5rem;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+header .links ul{
+    display: flex;
+    margin-top:5rem;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+header .links ul li{
+    color: black;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+header .links ul li:hover{
+    color: white;
+    border: 2px solid white;
+    background: linear-gradient(to bottom right,purple, blue);
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.about .about_section{
+    display: flex;
+}
+
+.about .pic img{
+    width: 80%;
+}
+
+.about .about_section .info .info_details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .details{
+    font-size: 18px;
+    background: linear-gradient(to bottom right, rgba(128, 0, 128, 0.989), rgba(0, 18, 100, 0.996));
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px black;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.info p{
+    text-align: left;
+    font-size: 18px;
+}
+
+.info .details:hover{
+    transform: scale(1.1);
+}
+
+
+.projects{
+    margin: 5rem auto;
+    width: 80%;
+    text-align: center;
+}
+
+.projects .project_links{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+}
+
+.project_links .project_block{
+    padding: 1rem;
+    box-shadow: 1px 1px 20px grey;
+    border-radius: 20px;
+    color:black;
+    transition: .5s ease-in-out;
+}
+
+.project_block img{
+    width: 40%;
+}
+
+.project_block:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to bottom right, purple, blue);
+    color: white;
+}
+
+
+.services{
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.services_blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
+}
+
+.services_blocks ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 2rem;
+}
+
+.services_blocks ul li{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.service_list{
+    background: linear-gradient(white, grey);
+    margin: 1rem 4rem;
+    border-radius: 0 0 2rem 2rem;
+    
+}
+
+.service_list .service_heading{
+    background: linear-gradient(navy, black);
+    color: white;
+    padding: 2rem;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.shadow{
+    box-shadow: 1px 1px 10px black;
+}
+
+
+.technologies{
+    margin: 5rem auto;
+    width: 80%;
+    text-align: center;
+}
+
+.swiper-slide{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.swiper-slide img{
+    width: 70%;
+    filter: drop-shadow(1px 1px 10px grey);
+}
+
+
+.testimonials{
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.testimonials .card{
+    margin: 2rem;
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.testimonials .card img{
+    width: 6rem;
+    border-radius: 50%;
+    border: 4px solid black;
+    margin: 1rem 0;
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+.contact{
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact .contact_card{
+    width: 70%;
+    
+}
+
+.contact .contact_block{
+    margin: 2rem 1rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px grey;
+    transition: .5s ease-in-out;
+}
+
+.contact .contact_form form{
+    padding: 1rem;
+}
+
+.contact_form form input{
+    margin: 1rem;
+    height: 2rem;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4rem;
+    font-size: 20px;
+    border: 0;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.contact_form form button{
+    border-radius: 4rem;
+    padding: 1rem;
+    color: white;
+    width: 60%;
+    font-size: 20px;
+    background: purple;
+}
+
+.contact_block h1{
+    margin: 1rem 0;
+    font-size: 40px;
+}
+
+.contact_block:hover{
+    background: linear-gradient(to bottom right, purple, navy);
+    color: white;
+    transform: scale(1.1);
+}
+
+
+footer{
+    width: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(white, grey);
+}
+
+footer ul{
+    margin: 5rem 0;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li{
+    font-size: 20px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .5s ease-in-out;
+}
+
+footer ul li a:hover{
+    color: navy;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+header{
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 83.31%, 2.00% 83.32%, 4.00% 83.21%, 6.00% 82.97%, 8.00% 82.61%, 10.00% 82.14%, 12.00% 81.58%, 14.00% 80.93%, 16.00% 80.20%, 18.00% 79.42%, 20.00% 78.61%, 22.00% 77.77%, 24.00% 76.94%, 26.00% 76.12%, 28.00% 75.35%, 30.00% 74.62%, 32.00% 73.97%, 34.00% 73.41%, 36.00% 72.94%, 38.00% 72.59%, 40.00% 72.35%, 42.00% 72.23%, 44.00% 72.24%, 46.00% 72.38%, 48.00% 72.64%, 50.00% 73.02%, 52.00% 73.50%, 54.00% 74.08%, 56.00% 74.75%, 58.00% 75.48%, 60.00% 76.27%, 62.00% 77.09%, 64.00% 77.92%, 66.00% 78.75%, 68.00% 79.56%, 70.00% 80.33%, 72.00% 81.05%, 74.00% 81.68%, 76.00% 82.23%, 78.00% 82.68%, 80.00% 83.02%, 82.00% 83.24%, 84.00% 83.33%, 86.00% 83.30%, 88.00% 83.14%, 90.00% 82.86%, 92.00% 82.47%, 94.00% 81.97%, 96.00% 81.37%, 98.00% 80.69%, 100.00% 79.95%);
+}
+
+header .first{
+    padding: 10rem 1rem;
+    font-size: 25px;
+    text-align: center;
+}
+
+header .links ul{
+    display: flex;
+    margin-top:3rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+header .links ul li{
+    color: black;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.about .about_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.about .about_section .info .info_details{
+    grid-template-columns: 1fr;
+}
+
+.about .about_section .info p{
+    text-align: center;
+}
+
+.about .pic img{
+    margin: 2rem 0;
+}
+
+.projects .project_links{
+    margin: 1rem 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+
+.project_links .project_block{
+    padding: 1rem;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 20px;
+    color:black;
+    margin: 1rem 0;
+    transition: .5s ease-in-out;
+}
+
+.project_links .project_block h2{
+    font-size: 15px;
+}
+
+.services{
+    width: 90%;
+}
+
+.services_blocks{
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+}
+
+
+.service_list{
+    margin: 1rem;
+}
+
+.testimonials .card{
+    width: 10rem;
+}
+
+
+.contact{
+    width: 90%;
+    margin: 5rem auto;
+    grid-template-columns: 1fr;
+}
+
+.contact .contact_card{
+    width: 100%;
+}
+
+.contact .contact_form{
+    text-align: center;
+    width: 90%;
+}
+
+
+footer ul{
+    flex-direction: column;
+}
+
+}
